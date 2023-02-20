@@ -80,11 +80,11 @@ struct ItemExporter: Exporter {
     // Add lines for each item
     lines.append(contentsOf: items.map {
       createCsvRow([
-        "\($0.id)",
+        $0.id.uuidString,
         $0.name,
         $0.description,
         $0.tags.joined(separator: ", "),
-        "\($0.created)",
+        $0.created.formatted(),
       ])
     })
 

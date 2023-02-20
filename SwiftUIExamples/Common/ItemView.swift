@@ -21,7 +21,7 @@ struct ItemView: View {
         Text("**Tags:** \(item.tags.joined(separator: ", "))")
           .padding(.bottom)
       }
-      Text("Created at \(item.created)")
+      Text("Created at \(item.created.formatted())")
         .padding(.bottom)
 
       if !item.children.isEmpty {
