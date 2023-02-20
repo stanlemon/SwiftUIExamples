@@ -19,21 +19,28 @@ struct TableExample: View {
 
   var body: some View {
     NavigationStack(path: $path) {
-      Table(items, selection: $selection, sortOrder: $sortOrder) {
-        TableColumn("ID") { item in
-          // For example, if this an iPhone the first column is the only one shown
-          if horizontalSizeClass == .compact {
-            NavigationLink(item.name, value: item)
-          } else {
-            Text("\(item.id)")
+      // The navigation modifiers cannot be on Table before 16.4 otherwise the compiler does not know what to do
+      VStack {
+        Table(items, selection: $selection, sortOrder: $sortOrder) {
+          TableColumn("ID") { item in
+            // For example, if this an iPhone the first column is the only one shown
+            if horizontalSizeClass == .compact {
+              VStack(alignment: .leading, spacing: 0) {
+                NavigationLink(item.name, value: item)
+                Text(item.description)
+              }
+            } else {
+              Text(item.id.uuidString)
+            }
           }
-        }
-        // Specifying a value make the column sortable
-        TableColumn("Name", value: \.name) { item in
-          NavigationLink(item.name, value: item)
-        }
-        TableColumn("Created", value: \.created) { item in
-          Text("\(item.created)")
+          // Specifying a value make the column sortable
+          TableColumn("Name", value: \.name) { item in
+            NavigationLink(item.name, value: item)
+          }
+          TableColumn("Description", value: \.description)
+          TableColumn("Created", value: \.created) { item in
+            Text(item.created.formatted())
+          }
         }
       }
       // When the sort order changes
