@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F6B813DC29AA3DA7002566A3 /* ToolbarExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B813DB29AA3DA7002566A3 /* ToolbarExample.swift */; };
 		F6EE04CB29A3BC95001A2CDF /* SwiftUIExamplesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EE04CA29A3BC95001A2CDF /* SwiftUIExamplesApp.swift */; };
 		F6EE04CD29A3BC95001A2CDF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EE04CC29A3BC95001A2CDF /* ContentView.swift */; };
 		F6EE04CF29A3BC96001A2CDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6EE04CE29A3BC96001A2CDF /* Assets.xcassets */; };
@@ -42,6 +43,7 @@
 
 /* Begin PBXFileReference section */
 		F6642FCA29A3FA9500EE43AF /* SwiftUIExamples.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftUIExamples.entitlements; sourceTree = "<group>"; };
+		F6B813DB29AA3DA7002566A3 /* ToolbarExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarExample.swift; sourceTree = "<group>"; };
 		F6EE04C729A3BC95001A2CDF /* SwiftUIExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6EE04CA29A3BC95001A2CDF /* SwiftUIExamplesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIExamplesApp.swift; sourceTree = "<group>"; };
 		F6EE04CC29A3BC95001A2CDF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 				F6EE04FA29A3BCCD001A2CDF /* SearchExample.swift */,
 				F6EE04F829A3BCC3001A2CDF /* TableExample.swift */,
 				F6EE050329A3ECA5001A2CDF /* ThreeColumnNavigationSplitViewExample.swift */,
+				F6B813DB29AA3DA7002566A3 /* ToolbarExample.swift */,
 				F6EE04FE29A3E159001A2CDF /* TwoColumnNavigationSplitViewExample.swift */,
 			);
 			path = Examples;
@@ -310,6 +313,7 @@
 				F6EE04CD29A3BC95001A2CDF /* ContentView.swift in Sources */,
 				F6EE04F929A3BCC3001A2CDF /* TableExample.swift in Sources */,
 				F6EE050229A3E298001A2CDF /* ItemView.swift in Sources */,
+				F6B813DC29AA3DA7002566A3 /* ToolbarExample.swift in Sources */,
 				F6EE050429A3ECA5001A2CDF /* ThreeColumnNavigationSplitViewExample.swift in Sources */,
 				F6EE04F729A3BCBC001A2CDF /* Item.swift in Sources */,
 				F6EE04FF29A3E159001A2CDF /* TwoColumnNavigationSplitViewExample.swift in Sources */,
