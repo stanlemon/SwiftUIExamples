@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F65C7C3229AD8547005F59A2 /* ChartExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65C7C3129AD8547005F59A2 /* ChartExample.swift */; };
 		F6B813DC29AA3DA7002566A3 /* ToolbarExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B813DB29AA3DA7002566A3 /* ToolbarExample.swift */; };
 		F6EE04CB29A3BC95001A2CDF /* SwiftUIExamplesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EE04CA29A3BC95001A2CDF /* SwiftUIExamplesApp.swift */; };
 		F6EE04CD29A3BC95001A2CDF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EE04CC29A3BC95001A2CDF /* ContentView.swift */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F65C7C3129AD8547005F59A2 /* ChartExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartExample.swift; sourceTree = "<group>"; };
 		F6642FCA29A3FA9500EE43AF /* SwiftUIExamples.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftUIExamples.entitlements; sourceTree = "<group>"; };
 		F6B813DB29AA3DA7002566A3 /* ToolbarExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarExample.swift; sourceTree = "<group>"; };
 		F6EE04C729A3BC95001A2CDF /* SwiftUIExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -153,6 +155,7 @@
 		F6EE04F429A3BCAB001A2CDF /* Examples */ = {
 			isa = PBXGroup;
 			children = (
+				F65C7C3129AD8547005F59A2 /* ChartExample.swift */,
 				F6EE04FC29A3DA1B001A2CDF /* FileExporterExample.swift */,
 				F6EE04FA29A3BCCD001A2CDF /* SearchExample.swift */,
 				F6EE04F829A3BCC3001A2CDF /* TableExample.swift */,
@@ -319,6 +322,7 @@
 				F6EE04FF29A3E159001A2CDF /* TwoColumnNavigationSplitViewExample.swift in Sources */,
 				F6EE04CB29A3BC95001A2CDF /* SwiftUIExamplesApp.swift in Sources */,
 				F6EE04FD29A3DA1B001A2CDF /* FileExporterExample.swift in Sources */,
+				F65C7C3229AD8547005F59A2 /* ChartExample.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

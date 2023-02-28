@@ -12,7 +12,7 @@ import SwiftUI
 struct ContentView: View {
   enum Example: String, Identifiable, Hashable {
     var id: Self { self }
-    case search, table, fileExporter, twoColumnSplitView, threeColumnSplitView, toolbar
+    case search, table, fileExporter, twoColumnSplitView, threeColumnSplitView, toolbar, chart
   }
 
   @SceneStorage("tabSelection") private var selectionData: String?
@@ -55,6 +55,12 @@ struct ContentView: View {
           Label("Toolbar", systemImage: "menubar.rectangle")
         }
         .tag(Example.toolbar)
+
+      ChartExample()
+        .tabItem {
+          Label("Chart", systemImage: "chart.bar")
+        }
+        .tag(Example.chart)
     }
     .onChange(of: selection) { selection in
       selectionData = selection.rawValue
