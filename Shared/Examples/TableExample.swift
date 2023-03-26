@@ -9,7 +9,9 @@ import SwiftUI
 
 // An example of a table with navigation
 struct TableExample: View {
+  #if os(iOS)
   @Environment(\.horizontalSizeClass) private var horizontalSizeClass
+  #endif
 
   @State private var path = NavigationPath()
   @State private var sortOrder = [KeyPathComparator(\Item.name)]
@@ -23,6 +25,7 @@ struct TableExample: View {
       VStack {
         Table(items, selection: $selection, sortOrder: $sortOrder) {
           TableColumn("ID") { item in
+            #if os(iOS)
             // For example, if this an iPhone the first column is the only one shown
             if horizontalSizeClass == .compact {
               VStack(alignment: .leading, spacing: 0) {
@@ -32,6 +35,9 @@ struct TableExample: View {
             } else {
               Text(item.id.uuidString)
             }
+            #else
+            Text(item.id.uuidString)
+            #endif
           }
           // Specifying a value make the column sortable
           TableColumn("Name", value: \.name) { item in

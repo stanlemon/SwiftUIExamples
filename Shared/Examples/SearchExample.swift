@@ -51,8 +51,12 @@ struct SearchExample: View {
     NavigationStack {
       // The VStack is required here for the navigation title and toolbar
       VStack {
-        List(results) { color in
-          Text(color.name)
+        List {
+          Section {
+            ForEach(results) { color in
+              Text(color.name)
+            }
+          }
         }
         .searchable(
           text: $text,
