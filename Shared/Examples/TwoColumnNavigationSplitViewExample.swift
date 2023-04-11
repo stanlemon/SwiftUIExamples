@@ -17,6 +17,7 @@ struct TwoColumnNavigationSplitViewExample: View {
       List(items, selection: $selection) { item in
         NavigationLink(item.name, value: item)
       }
+      .navigationTitle("Two Columns")
     } detail: {
       NavigationStack(path: $path) {
         VStack {
