@@ -126,11 +126,10 @@ class ExportDocument: FileDocument {
   }
 }
 
+struct CorruptedFileError: Error {}
 
 struct FileExporterExample_Previews: PreviewProvider {
   static var previews: some View {
     FileExporterExample()
   }
 }
-
-struct CorruptedFileError: Error {}
